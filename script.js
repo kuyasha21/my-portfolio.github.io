@@ -32,7 +32,7 @@ menuIcon.onclick = () => {
 
 // scroll animation control
 ScrollReveal({
-    // reset: true,   // for showing the animation everytime
+    reset: true,   // for showing the animation everytime
     distance: '80px',
     duration: 2000,
     delay: 200,
