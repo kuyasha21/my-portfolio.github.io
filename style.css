@@ -31,7 +31,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 9%;  
+        /* top-bottom,  left-right */
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -64,6 +65,7 @@ body{
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+        /* top, left-right, bottom  */
 }
 
 .home{
@@ -112,19 +114,19 @@ span{
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    margin: 3rem 1.5rem 3rem 0;   /* top right bottom left  */
+    transition: .5s ease;    /* creates a smooth and natural transition effect */
 }
 
 .social-media a:hover{
     background: var(--main-color);
     color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);    /* horizontal vertical length color  */
 }
 
 .btn{
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1rem 2.8rem;   /* vertical horizontal  */
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
@@ -141,9 +143,9 @@ span{
 
 .about{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    justify-content: center;    /* horizontally centre  */
+    align-items: center;    /* vertically centre  */
+    gap: 2rem;   /* gap between 2 child elements  */
     background: var(--second-bg-color);
 }
 
@@ -184,7 +186,7 @@ span{
 }
 
 .services-container .services-box{
-    flex: 1 1 30rem;
+    flex: 1 1 30rem;    /* grow shrink basis  */
     background-color: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -195,7 +197,7 @@ span{
 
 .services-container .services-box:hover{
     border-color: var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1.02);    /* 2% grow from it's original size  */
 }
 
 .services-box i{
@@ -222,7 +224,8 @@ span{
 
 .portfolio-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);    
+    /* creates a grid layout with three equal-width columns  */
     align-items: center;
     gap: 2.5rem;
 }
@@ -241,7 +244,7 @@ span{
 }
 
 .portfolio-box:hover img{
-    transform: scale(1.1);
+    transform: scale(1.1);  /* 10 % larger */
 }
 
 .portfolio-box .portfolio-layer{
@@ -362,3 +365,146 @@ span{
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+
+
+/* mobile */
+/* @media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+} */
+
+/* @media (max-width: 991px){
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+} */
+
+/* @media (max-width: 768px) { */
+    /* menu bar ta antese */
+    /* #menu-icon {
+        display: block;
+    } */
+
+    /* navbar position ta down kore antese */
+    /* .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    } */
+
+    /* navbar gula block wise list e ashbe */
+    /* .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    } */
+
+    /* sob column wise ashte thakbe... upor niche */
+    /* .home {
+        flex-direction: column;
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h2{
+        font-size: 3.8rem;
+    }
+
+    .home-img img{
+        width: 55vw;
+        height: 60vw;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about img{
+        width: 57vw;
+        height: 55vw;
+    }
+
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+/* @media (max-width: 617px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* @media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+} */
+
+/* @media (max-width: 365px){
+    .home-img img{
+        width: 72vw;
+        height: 80vw;
+    }
+
+    .about-img img{
+        width: 72vw;
+        height: 75.5vw;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+ */
