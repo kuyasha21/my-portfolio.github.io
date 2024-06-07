@@ -369,13 +369,13 @@ span{
 
 
 /* mobile */
-/* @media (max-width: 1200px){
+@media (max-width: 1200px){
     html{
         font-size: 55%;
     }
-} */
+}
 
-/* @media (max-width: 991px){
+@media (max-width: 991px){
     .header {
         padding: 2rem 3%;
     }
@@ -399,16 +399,16 @@ span{
     .footer {
         padding: 2rem 3%;
     }
-} */
+}
 
-/* @media (max-width: 768px) { */
+@media (max-width: 768px) {
     /* menu bar ta antese */
-    /* #menu-icon {
+    #menu-icon {
         display: block;
-    } */
+    }
 
     /* navbar position ta down kore antese */
-    /* .navbar {
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -422,17 +422,17 @@ span{
 
     .navbar.active {
         display: block;
-    } */
+    }
 
     /* navbar gula block wise list e ashbe */
-    /* .navbar a {
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-    } */
+    }
 
     /* sob column wise ashte thakbe... upor niche */
-    /* .home {
+    .home {
         flex-direction: column;
     }
 
@@ -469,15 +469,15 @@ span{
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
-} */
+} 
 
-/* @media (max-width: 617px){
+@media (max-width: 617px){
     .portfolio-container{
         grid-template-columns: 1fr;
     }
-} */
+} 
 
-/* @media (max-width: 450px){
+@media (max-width: 450px){
     html{
         font-size: 50%;
     }
@@ -485,9 +485,9 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
-} */
+} 
 
-/* @media (max-width: 365px){
+@media (max-width: 365px){
     .home-img img{
         width: 72vw;
         height: 80vw;
@@ -507,4 +507,4 @@ span{
         margin-top: 2rem;
     }
 }
- */
+ 
